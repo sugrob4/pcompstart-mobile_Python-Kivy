@@ -1,0 +1,3 @@
+title=pcompstart-mobile
+author=Aleksey (Mordechai) Povar
+orientation=portrait

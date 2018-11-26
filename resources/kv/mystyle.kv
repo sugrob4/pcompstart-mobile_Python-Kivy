@@ -1,0 +1,125 @@
+#: import Window kivy.core.window.Window
+#: import KIVY_DEFAULT_FONT appclass.KIVY_DEFAULT_FONT
+
+<Label>:
+    markup: True
+    font_name: KIVY_DEFAULT_FONT
+
+<MyMadenButton>:
+	id: mymade
+	size_hint_y: None
+	padding: 2
+	height: root.height_but
+	border: (0, 0, 0, 0)
+	on_press: root.press(self.canvas, root.text)
+	canvas:
+		# Тень кнопки
+		Color:
+			rgb: 0.71, 0.71, 0.71
+		RoundedRectangle:
+			pos: self.x + dp(2), self.y - dp(2) if self.shad_but == False else self.y - 1
+			size: self.size if self.shad_but == False else (self.width - dp(2), self.height)
+#			pos: self.x + 2.5, self.y - 3 if self.shad_but == False else self.y - 1
+#			size: self.size if self.shad_but == False else (self.width - 3, self.height)
+			radius: root.radius_button
+		# Цвет кнопки
+		Color:
+			rgba: root.button_color
+		RoundedRectangle:
+			pos: self.pos
+			size: self.size
+			radius: root.radius_button
+
+	Image:
+	    id: btn_img
+		source: root.icon
+		size_hint: root.size_x_image, 1
+		allow_stretch: True
+		keep_ratio: True
+	
+	Label:
+		text_size: self.width, None
+		halign: 'center'
+		text: root.text
+		color: root.text_color
+		font_size: sp(16)
+
+# ------------------------------ MyPopup ------------------------------
+
+<MyPopup>:
+	size_hint: None, None
+	size: Window.width - dp(30), root.size_height_window
+	BoxLayout:
+		id: box_root
+		orientation: 'vertical'
+		GridLayout:
+			id: box_content
+			cols: 1
+			size_hint_y: None
+			height: self.minimum_height
+
+# ------------------------------ Settings ------------------------------
+
+<ProjSettings>:
+    canvas.before:
+        Color:
+            rgba: 1.0, 1.0, 1.0, 1.0
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<SettingTitle>:
+    color: [0, 0, 0, .8]
+    markup: True
+    font_name: KIVY_DEFAULT_FONT
+    font_size: '16sp'
+    halign: 'center'
+    valign: 'middle'
+
+<SettingItem>:
+    canvas.before:
+        Color:
+            rgba: 0.17, 0.41, 0.47, 1.0
+        Rectangle:
+            pos: self.x, self.y + 1
+            size: self.width, self.height
+
+# ------------------------------ SearchItem ------------------------------
+
+<SearchItem>:
+    size_hint_y: None
+    height: 0
+    pos_hint: {"top": dp(1)}
+    FloatLayout:
+        id: flot_txt
+        size_hint: None, None
+        pos_hint: {"top": dp(1)}
+        x: Window.width
+        width: Window.width - dp(20)
+        TextInput:
+            id: txtinpt
+            x: flot_txt.x
+            multiline: False
+            hint_text: root.hint_text
+            padding: dp(5), dp(7), dp(5), dp(5)
+            size_hint_y: None
+            height: dp(34)
+            pos_hint: {"top": dp(5.5)}
+        Button:
+            id: btn_txt
+            text: "Search"
+            size_hint: None, None
+            size: txtinpt.width / 2, dp(40)
+            pos_hint: {'x': .25, 'top': dp(5)}
+            font_name: KIVY_DEFAULT_FONT
+            font_size: sp(17)
+            background_normal: "atlas://material/images/mypopup/mypopup/button_ok"
+            background_down: "atlas://material/images/mypopup/mypopup/button_ok_shadow"
+            on_release: root.search(txtinpt.text)
+            Image:
+                source: "material/images/search_txtinpt.png"
+                size: dp(25), dp(25)
+                size_hint: None, None
+                mipmap: True
+                y: btn_txt.y + dp(8)
+                x: btn_txt.x + dp(10)

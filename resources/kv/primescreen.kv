@@ -1,0 +1,111 @@
+#: import os os
+#: import SlideTransition kivy.uix.screenmanager.SlideTransition
+#: import Window kivy.core.window.Window
+#: import KIVY_DEFAULT_FONT appclass.KIVY_DEFAULT_FONT
+
+<Grdl@GridLayout+ActionItem>:
+    id: gldr
+    size_hint_x: None
+    rows: 1
+    col_default_width: dp(50)
+    minimum_width: self.col_default_width * self.rows
+    width: self.minimum_width
+    pos_hint: {'center_y': 0.39}
+
+<ActionButton>:
+    size_hint: None, None
+    size: dp(42), dp(42)
+    border: 0, 0, 0, 0
+    title: os.path.split(self.background_normal)[1]
+
+<Label>:
+	markup: True
+	font_name: KIVY_DEFAULT_FONT
+
+<PrimeScreen>:
+	id: primescreen
+	orientation: 'vertical'
+	canvas:
+		Color:
+			rgb: 0.89, 0.89, 0.89
+		Rectangle:
+			size: self.size
+			pos: self.pos
+	ActionBar:
+	    id: actbar
+	    top: root.top
+	    orientation: 'horizontal'
+	    size_hint_y: None
+	    height: dp(55)
+		canvas:
+			Color:
+				rgb: 0.0, 0.6, 0.8
+			Rectangle:
+				pos: self.pos
+				size: self.size
+		canvas.after:
+			Color:
+				rgb: 0.0, 0.51, 0.68
+			Rectangle:
+				pos: self.x, self.y
+				size: self.width, 2
+		ActionView:
+			ActionPrevious:
+#				app_icon: 'material/images/logo.png'
+#				app_icon_height: dp(50)
+#				app_icon_width: dp(60)
+
+				app_icon: ''
+				previous_image: 'material/images/logo.png'
+				previous_image_height: dp(45)
+				previous_image_width: dp(55)
+#				with_previous: True
+#				pos_hint: {'top': 1.02}
+#				pos_hint: {"x": 10}
+#				with_previous: False
+				on_release: root.events_callback('slide_panel')
+				Label:
+					markup: True
+					text: '[b][color=#F2F2F2]pcompstart-mobile[/color][/b]'
+					size_hint_x: None
+					size: self.texture_size
+					valign: 'middle'
+					text_size: root.width, None
+					font_size: '14sp'
+            Grdl:
+                ActionButton:
+                    id: home
+                    background_normal:
+                        'atlas://material/images/actionbarimg/actionbarimg/home'
+                    background_down:
+                        'atlas://material/images/actionbarimg/actionbarimg/home_active'
+                    on_release: screen_manager.current = 'primescreen'
+                ActionButton:
+                    id: search
+                    background_normal:
+                        'atlas://material/images/actionbarimg/actionbarimg/search'
+                    background_down:
+                        'atlas://material/images/actionbarimg/actionbarimg/search_active'
+                    on_release: root.searchitem.animfunc()
+                ActionButton:
+                    id: sitemap
+                    background_normal:
+                        'atlas://material/images/actionbarimg/actionbarimg/sitemap'
+                    background_down:
+                        'atlas://material/images/actionbarimg/actionbarimg/sitemap_active'
+                    on_release: root.open_sitemap()
+
+	ScreenManager:
+		id: screen_manager
+		transition: SlideTransition()
+		Screen:
+		    id: pr_scr
+			name: 'primescreen'
+            Image:
+                source: 'material/images/master_img.png'
+                pos_hint: {'center_x': 0.49, 'center_y': .87}
+                size_hint: .9, .18
+            Image:
+                source: 'material/images/delimiter_screen.png'
+                pos_hint: {'center_y': .77}
+                allow_stretch: True

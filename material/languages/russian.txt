@@ -1,0 +1,106 @@
+﻿# -*- coding: utf-8 -*-
+#
+# Файл русской языковой локализации
+#
+
+#-----------------test------------------------
+
+string_lang_title = 'pcompstart-mobile'
+string_lang_exit_key = 'Выход'
+
+#------------------------------------------------------------------------------
+
+string_lang_wait = 'Подождите пожалуйста'
+string_lang_exit = 'Покинуть программу?'
+string_lang_enter_value = 'Введите значение'
+string_lang_not_locale = 'Нет файла локализации {}.txt'
+
+#------------------------------------------------------------------------------
+
+string_lang_yes = 'Да'
+string_lang_no = 'Нет'
+string_lang_cancel = 'Отмена'
+string_lang_clean = 'Очистить'
+
+#------------------------------------------------------------------------------
+
+string_lang_license = 'Лицензия'
+string_lang_not_license = 'Не найден текст лицензии!'
+string_lang_on_russian = 'На русском'
+string_lang_on_english = 'На английском'
+string_lang_menu = 'Меню'
+string_lang_prev_license = 'Ознакомиться с текстом лицензии:'
+
+#------------------------------------------------------------------------------
+
+string_lang_settings = 'Настройки'
+string_lang_general = 'Общие'
+string_lang_theme = 'Темы'
+string_lang_my_cabinet = 'Мой кабинет'
+string_lang_my_shelves = 'Мои полки'
+string_lang_to_website = 'Перейти на сайт'
+string_lang_license = 'Лицензия'
+
+string_lang_setting_language = 'Настройки локализации:'
+string_lang_setting_language_title = 'Язык приложения'
+string_lang_setting_language_desc = 'Выберите предпочтительный язык приложения; Требуется перезапуск программы.'
+string_lang_setting_language_russian = 'Русский'
+string_lang_setting_language_english = 'English'
+
+string_lang_setting_chek_themes = 'Настройки цветовых тем:'
+string_lang_setting_chek_themes_title = 'Выбрать тему'
+string_lang_setting_chek_themes_desc = 'Выберите одну из установленных цветовых тем;'
+string_lang_setting_edit_themes_title = 'Изменить тему'
+string_lang_setting_edit_themes_desc = 'Правка цветовой палитры одной из установленных тем;'
+string_lang_setting_create_themes_title = 'Создать тему'
+string_lang_setting_create_themes_desc = 'Создайте новую цветовую схему приложения;'
+
+#------------------------------------------------------------------------------
+
+string_lang_userful_programs = 'Полезные программы'
+string_lang_advice_on_computer = 'Советы по компьютеру'
+string_lang_user_windows = 'Пользователю Windows'
+string_lang_articles_in_theme = 'Статьи в тему'
+string_lang_popular_program = 'Популярные програмы'
+string_lang_other = 'Разное'
+
+string_lang_close_settings = 'Закрыть настройки'
+strin_lang_on_close = 'Закрыть'
+
+#------------------------------------------------------------------------------
+
+string_lang_about = 'О программе'
+string_lang_about_text = '''\n
+[b]Версия - 0.3.2[/b]
+Это мобильный клиент сайта pcompstart.com. Программа называется pcompstart-mobile.
+Для входа в меню программы нужно
+нажать на кнопку,которая находится
+в верхнем левом углу (Иконка логотип "ноутбук").
+В меню утилиты среди прочего,
+будет кнопка для просмотра лицензии
+(Для тех, кто желает ознакомиться может прочитать).
+Контактный e-mail с автором
+программы – pcompstart@gmail.com.
+Также связаться можно со страницы "Контакты" сайта pcompstart.com.
+'''
+
+#ProjSettings------------------------------------------------------------------------------
+
+string_additional_options = 'Дополнительные опции:'
+string_clear_cache = 'Запустить очистку кэша'
+string_clear_cache_program = 'Нажмите для очистки кэша програмы; Удаление данных загруженых с сайта.'
+string_run_cache_cleaning = 'Запустить \n  очистку'
+string_want_clear_cache = 'Вы действительно желаете удалить кэш программы?'
+
+#SearchItem---------------------------------------------------------------------------------
+
+string_enter_designation = 'Введите данные'
+
+#ScreenWin--------------------------------------------------------------------------
+string_not_data = 'Данных пока не существует, \nдля загрузки материала, \nзайдите и выйдите, \n(до полной загрузки)\nв каждую директорию, \nс главной страницы программы.'
+string_3_characters = 'Введите минимум 3 символа!'
+string_nothing_for_request = 'По текущему запросу \n  ничего не найдено!'
+
+#BugReporter--------------------------------------------------------------------------
+string_lang_bugreporter = 'Извините, в pcompstart-mobile произошла внутренняя ошибка.'
+string_lang_bugreporter1 = 'Вы можете сообщить об этой ошибке, используя кнопки ниже, \nчем окажите помощь в совершенствовании программы.'

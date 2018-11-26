@@ -1,0 +1,107 @@
+# -*- coding: utf-8 -*-
+#
+# English language localization file
+#
+
+#-----------------test------------------------
+
+string_lang_title = 'pcompstart-mobile'
+string_lang_exit_key = 'Exit'
+
+#------------------------------------------------------------------------------
+
+string_lang_wait = 'Please wait'
+string_lang_exit = 'Leave the program?'
+string_lang_enter_value = 'Enter value'
+string_lang_not_locale = 'No localization file {}.txt'
+
+#------------------------------------------------------------------------------
+
+string_lang_yes = 'Yes'
+string_lang_no = 'No'
+string_lang_cancel = 'Cancel'
+string_lang_clean = 'Clear'
+
+#------------------------------------------------------------------------------
+
+string_lang_license = 'License'
+string_lang_not_license = 'License text not found!'
+string_lang_on_russian = 'In Russian'
+string_lang_on_english = 'In English'
+string_lang_menu = 'Menu'
+string_lang_prev_license = 'Read the text of license:'
+
+#------------------------------------------------------------------------------
+
+string_lang_settings = 'Settings'
+string_lang_general = 'General'
+string_lang_theme = 'Thems'
+string_lang_my_cabinet = 'My office'
+string_lang_my_shelves = 'My shelves'
+string_lang_to_website = 'Go to site'
+string_lang_license = 'License'
+
+string_lang_setting_language = 'Localization settings:'
+string_lang_setting_language_title = 'Application language'
+string_lang_setting_language_desc = 'Select your preferred language for application; Need to restart programm.'
+string_lang_setting_language_russian = 'Русский'
+string_lang_setting_language_english = 'English'
+
+string_lang_setting_chek_themes = 'Color theme settings:'
+string_lang_setting_chek_themes_title = 'Choose a theme'
+string_lang_setting_chek_themes_desc = 'Select one of the installed color themes;'
+string_lang_setting_edit_themes_title = 'Change teme'
+
+#------------------------------------------------------------------------------
+
+string_lang_userful_programs = 'Useful programs'
+string_lang_advice_on_computer = 'Tips for computer'
+string_lang_user_windows = 'Windows user'
+string_lang_articles_in_theme = 'Articles in theme'
+string_lang_popular_program = 'Popular program'
+string_lang_other = 'Other'
+
+string_lang_close_settings = 'Close settings'
+strin_lang_on_close = 'Close'
+
+#------------------------------------------------------------------------------
+
+string_lang_about = 'About program'
+string_lang_about_text = '''\n
+[b]Version - 0.3.2[/b]
+This is a mobile client
+for site pcompstart.com.
+Program is called pcompstart-mobile.
+To enter the program menu
+you need to click on the button,
+which is in the upper left corner
+(Icon logo "notebook").
+In the utility menu, among other things,
+there will be a button for
+viewing license.
+Contact e-mail with the author
+program – pcompstart@gmail.com.
+You can also contact from the page
+"Contacts" in site pcompstart.com.
+'''
+
+#ProjSettings------------------------------------------------------------------------------
+
+string_additional_options = 'Additional options:'
+string_clear_cache = 'Clearing the cache'
+string_clear_cache_program = 'Press for clearing cache of programm; Deleting data downloaded from site'
+string_run_cache_cleaning = 'Run \n  clear'
+string_want_clear_cache = 'Are you sure want to delete cache program?'
+
+#SearchItem---------------------------------------------------------------------------------
+
+string_enter_designation = 'Enter Designation'
+
+#ScreenWin--------------------------------------------------------------------------
+string_not_data = 'The material does not exist yet, \n to download the data, go to all \ncategories on the home page'
+string_3_characters = 'Enter at least 3 characters!'
+string_nothing_for_request = 'Nothing found for that request!'
+
+#BugReporter--------------------------------------------------------------------------
+string_lang_bugreporter = 'Sorry, pcompstart-mobile has experienced an internal error.'
+string_lang_bugreporter1 = 'You can report this bug using the buttons bellow, \nhelping me to fix it.'
